@@ -43,7 +43,7 @@ jobs:
           echo "::warning::adnotacja z labelka error"
       - name: Set job summary
         run: |
-          echo '### Hello world! 🚀' >> $GITHUB_STEP_SUMMARY
+          echo '### tests results 🚀' >> $GITHUB_STEP_SUMMARY
           echo '|       | status |   message  |' >> $GITHUB_STEP_SUMMARY
           echo '|-------|--------|-----|' >> $GITHUB_STEP_SUMMARY
           echo '| test1 | ✅      |     |' >> $GITHUB_STEP_SUMMARY
