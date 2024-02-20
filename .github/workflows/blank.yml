@@ -37,6 +37,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo "::error::adnotacja z labelka error"
+      - name: E2E tests
+        run: |
+          echo Add other actions to build,
+          echo "::warning::adnotacja z labelka error"
   deploy:
     # The type of runner that the job will run on
     needs: build
