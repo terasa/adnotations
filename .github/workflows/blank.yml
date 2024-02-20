@@ -38,6 +38,7 @@ jobs:
           echo "::error::adnotacja z labelka error"
   deploy:
     # The type of runner that the job will run on
+    needs: build
     runs-on: ubuntu-latest
     steps:
       # Runs a set of commands using the runners shell
