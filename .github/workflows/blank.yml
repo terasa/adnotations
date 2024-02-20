@@ -41,6 +41,14 @@ jobs:
         run: |
           echo Add other actions to build,
           echo "::warning::adnotacja z labelka error"
+      - name: Set job summary
+        run: |
+          echo '### Hello world! 🚀' >> $GITHUB_STEP_SUMMARY
+          echo '|       | status |   message  |'
+          echo '|-------|--------|-----|'
+          echo '| test1 | ✅      |     |'
+          echo '| test2 | ❌      | sww |'
+          echo '| test3 | ❌      | null pointer  |'
   deploy:
     # The type of runner that the job will run on
     needs: build
