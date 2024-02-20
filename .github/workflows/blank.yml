@@ -44,11 +44,11 @@ jobs:
       - name: Set job summary
         run: |
           echo '### Hello world! 🚀' >> $GITHUB_STEP_SUMMARY
-          echo '|       | status |   message  |'
-          echo '|-------|--------|-----|'
-          echo '| test1 | ✅      |     |'
-          echo '| test2 | ❌      | sww |'
-          echo '| test3 | ❌      | null pointer  |'
+          echo '|       | status |   message  |' >> $GITHUB_STEP_SUMMARY
+          echo '|-------|--------|-----|' >> $GITHUB_STEP_SUMMARY
+          echo '| test1 | ✅      |     |' >> $GITHUB_STEP_SUMMARY
+          echo '| test2 | ❌      | sww |' >> $GITHUB_STEP_SUMMARY
+          echo '| test3 | ❌      | null pointer  |' >> $GITHUB_STEP_SUMMARY
   deploy:
     # The type of runner that the job will run on
     needs: build
